@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+/* body{
+background: black;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 20px;
+height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.TodosBlock{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: black;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(140,70,186,1) 32%, rgba(0,212,255,1) 100%);
+  border-radius: 15px 50px;
   display: flex;
+  margin-top: 30px;
+  width: 100%;
+  height: 90vh;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+} */
+
+ 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background: #066acd;
+}
+.container{
+  width: 40%;
+  min-width: 450px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  background: white;
+  border-radius: 10px;
+
 }
 
-.App-link {
-  color: #61dafb;
+#newtask{
+  position: relative;
+  padding: 30px 20px;
+  display: flex;
+
+  align-items: center;
+}
+#newtask input{
+  width: 75%;
+  height: 45px;
+  font-family: 'Poppins',sans-serif;
+  font-size: 15px;
+  border: 2px solid #d1d3d4;
+  padding: 12px;
+  color: #111111;
+  font-weight: 500;
+  position: relative;
+  border-radius: 5px;
+}
+#newtask input:focus{
+  outline: none;
+  border-color: #0d75ec;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#newtask button{
+  position: relative;
+  float: right;
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #0d75ec;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
 }
+
+
+.tasks{
+  background-color: #ffffff;
+  padding: 30px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+.task{
+  background-color: #c5e1e6;
+  height: 50px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #939697;
+  cursor: pointer;
+}
+.task span{
+  font-family: 'Poppins',sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.task button{
+  background-color: #0a2ea4;
+  color: #ffffff;
+  height: 100%;
+  width: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.completed{
+  text-decoration: line-through;
+}     

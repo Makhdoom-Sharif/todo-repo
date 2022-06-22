@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './Component/Header';
-import Body from './Component/Body';
+import Todoapp from './Component/Todoapp';
+
 
 function App() {
-  return (<>
-    <Header/>
-    <Body/>
-    </>
+  return (
+     <div className='TodosBlock'>
+    <Todoapp />
+    </div>
     );
 }
 
