@@ -102,8 +102,3 @@ body{
   outline: none;
   margin: 5px;
 }
-
-
-.completed{
-  text-decoration: line-through;
-}     
