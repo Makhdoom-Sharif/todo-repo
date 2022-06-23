@@ -69,7 +69,7 @@ const error = ()=>{
         
         <form onSubmit={(e) => submitHandler(e)}>
         <div id="newtask">  
-          <input  placeholder="Enter Your Today's Tasks" value={text}
+          <input multiple  placeholder="Enter Your Today's Tasks" value={text}
             onChange={(e) => setText(e.target.value)}></input>
          
         <button style={{marginLeft:"5px"}}  type="submit" >
@@ -86,13 +86,18 @@ const error = ()=>{
 
 
 
-        <div>
+        <div className='main'>
           <ul  className='tasks'>
             {todoList.map((item, index) => {
               return (
               
                 <li className='task'  key={index}>
-                  {item}
+                  <div className='text'>
+                    <p>
+                    {item}
+                    </p>
+                  
+                  </div>
                   <div className='buttons'>
                   <IconButton aria-label="Add" disabled={disable} onClick={() => deleteItem(index)}>
                     <DeleteIcon />

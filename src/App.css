@@ -25,6 +25,12 @@ body{
  }
 }
 
+@media screen and (min-width:760px){
+.container{
+  width: 90%;
+}
+}
+
 #newtask{
   position: relative;
   padding: 30px 20px;
@@ -76,7 +82,7 @@ body{
 }
 .task{
   background-color: #c5e1e6;
-  height: 50px;
+  /* height: 50px; */
   margin-bottom: 8px;
   padding: 5px 10px;
   display: flex;
@@ -102,3 +108,19 @@ body{
   outline: none;
   margin: 5px;
 }
+.buttons{
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.text p {
+  word-break: break-all
+
+}
+
+/* .main ul li p {
+  max-width: 50px;
+} */
+
