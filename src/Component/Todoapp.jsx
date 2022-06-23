@@ -69,7 +69,7 @@ const error = ()=>{
         
         <form onSubmit={(e) => submitHandler(e)}>
         <div id="newtask">  
-          <input multiple  placeholder="Enter Your Today's Tasks" value={text}
+          <input multiple  placeholder="Enter Your Today's Tasks below" value={text}
             onChange={(e) => setText(e.target.value)}></input>
          
         <button style={{marginLeft:"5px"}}  type="submit" >
